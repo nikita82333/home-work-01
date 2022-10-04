@@ -71,4 +71,10 @@ include(CPack)
 
 enable_testing()
 
+add_subdirectory(googletest)
+add_executable(g_test_version g_test_version.cpp lib.cpp)
+target_link_libraries(g_test_version gtest_main)
+
 add_test(test_version test_version)
+add_test(g_test_version g_test_version)
+
