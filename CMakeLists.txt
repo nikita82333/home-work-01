@@ -5,7 +5,7 @@ set(PROJECT_VESRION 0.0.${PATCH_VERSION})
  
 project(helloworld VERSION ${PROJECT_VESRION})
  
-option(BOOST_TEST_ENABLE "Enable boost tests" ON)
+option(BOOST_TEST_ENABLE "Enable boost tests" OFF)
 option(GOOGLE_TEST_ENABLE "Enable google tests" ON)
  
 configure_file(version.h.in version.h)
